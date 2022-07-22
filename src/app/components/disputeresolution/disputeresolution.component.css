@@ -1,0 +1,153 @@
+.page-content {
+  width: 70%;
+  text-align: center;
+}
+.title-container {
+  margin: auto;
+}
+.title-container h1 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.title-container p {
+  color: grey;
+  margin: 2px;
+  border-bottom: 1px solid grey;
+}
+.quiz-time {
+  margin-left: auto;
+  font-weight: bolder;
+}
+.toggle-questions {
+  /* color: #009900; */
+  color: red;
+  margin: 1rem 0;
+  cursor: pointer;
+  user-select: none;
+}
+.toggle-questions img {
+  width: 15px;
+  /* transform: rotate(180deg); */
+  transition: all 0.3s linear;
+}
+.mcq label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 25px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 15px;
+}
+input[type="radio"] {
+  /* background-color: #009900; */
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkmark {
+  position: absolute;
+  top: 4px;
+  right: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+label:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+label input:checked ~ .checkmark {
+  background-color: #009900;
+  border: 1px solid white;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+label input:checked ~ .checkmark:after {
+  display: block;
+}
+label .checkmark:after {
+  top: 5px;
+  left: 5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+.mcq div {
+  margin-bottom: 1rem;
+}
+.question {
+  border-bottom: 8px solid rgb(221, 214, 214);
+}
+.questionswrapper {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+.questionswrapper.active {
+  /* max-height: 200px; */
+  height: auto;
+}
+.togglecolor {
+  color: #009900;
+}
+
+.toggle-questions i {
+  transform: rotate(180deg);
+}
+.togglecolor i {
+  transform: rotate(0);
+}
+.textaera-title {
+  font-size: 15px;
+  font-weight: 700;
+  /* display: inline-block; */
+  text-align: right;
+  margin: 5px;
+}
+.bi-mic {
+  color: white;
+  font-size: 3rem;
+  border-radius: 50px;
+  border: 1px solid #009900;
+  display: inline-block;
+  margin: auto;
+  cursor: pointer;
+  background-color: #009900;
+}
+.last-btn {
+  margin: 1rem auto;
+  width: 20rem;
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
